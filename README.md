@@ -1,2 +1,1 @@
-Name: Kaitlyn Lee
-Project Description: A simulation game where you are running an onigiri shop and have to fulfill orders according to the customer. Customer orders are randomized and there will be 4 customers per gameplay. If you make a mistake, you have to throw out your current progress on the onigiri and start over. This will be accounted for in your score as a chef. A perfect onigiri will give you a 100%, a wrong onigiri will give you a 50%, and each time you restart when making an onigiri is -10%. At the end of the game all 4 scores will be averaged out and you will recieve a final score. 
+
