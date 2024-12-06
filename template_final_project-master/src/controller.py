@@ -35,13 +35,13 @@ class Controller:
         # together images/onigiris
         self.composite_image = {
             ("rice_plate", "sea_plate"):
-                pygame.image.load("../assets/plain_onigiri"),
+                pygame.image.load("../assets/plain_onigiri.png"),
             ("rice_plate", "sea_plate", "mentaiko_plate"):
                 pygame.image.load("../assets/mentaiko_onigiri.png"),
             ("rice_plate", "sea_plate", "plum_plate.png"):
                 pygame.image.load("../assets/plum_onigiri.png"),
             ("rice_plate", "sea_plate", "salmon_plate.png"):
-                pygame.image.load("../assets/salmon_onigiri"),
+                pygame.image.load("../assets/salmon_onigiri.png"),
             ("rice_plate", "sea_plate", "temp_plate.png"):
                 pygame.image.load("../assets/tempura_onigiri.png")
         }
@@ -129,8 +129,8 @@ class Controller:
             self.screen.blit(self.plate_image, (450,100)) #position for image
             
             composite_key = tuple(sorted(self.player_selections))
-            if composite_key in self.composite_images:
-                self.screen.blit(self.composite_images[composite_key], (150,50))
+            if composite_key in self.composite_image:
+                self.screen.blit(self.composite_image[composite_key], (150,50))
             else:
                 for i, food_item in enumerate(self.player_selections):
                     if food_item in self.food_images:
